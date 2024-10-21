@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iu em  </title>
+   <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    html {
+      overflow: hidden;
+    }
+    body {
+      background: linear-gradient(to bottom right, 
+                #ff66cc,   /* hồng tươi */
+                #ff99cc,   /* hồng nhạt */
+                #ff66ff,   /* tím nhạt */
+                #ffcccc); 
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+    }
+    body::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: white ;
+      font-size: 10px;
+    }
+    .heart {
+      background-color: transparent;
+      width: 253px;
+      height: 220px;
+      display: flex;
+      position: relative;
+      display: none;
+      transition: all;
+    animation: apper 1s linear;
+    z-index: 11;
+    }
+    .heart p {
+      z-index: 10;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    padding: 33px 30px 23px 18px;
+    transition: all;
+    animation: apper 2s linear;
+    }
+    .heart-left {
+      top: -23px;
+      right: 62px;
+      position: absolute;
+      width: 150px;
+      height: 312px;
+      background-color: red;
+      clip-path: polygon(0 0, 100% 0, 100% 73.9%, 0 73.9%);
+      border-radius: 200px;
+      transform: rotate(-45deg);
+    }
+    .heart-right {
+      right: 62px;
+      top: -23px;
+      width: 150px;
+      height: 312px;
+      position: absolute;
+      background-color: red;
+      border-radius: 200px;
+      transform: rotate(45deg);
+      clip-path: polygon(0 0, 100% 0, 100% 73.9%, 0 73.9%);
+    }
+    /* ---------------------------------------------- */
+     .light {
+      width: 230px;
+      height: 230px;
+      background: linear-gradient(to bottom, #ff0000, #ff9999);
+      border-radius: 50%;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: center;
+      /* justify-content: center; */
+      text-align: center;
+      color: white;
+      font-size: 22px;
+      font-weight: 600;
+      padding: 20PX;
+      /* padding-bottom: ; */
+      letter-spacing: 2px;
+    }
+    .light::before {
+      content: '';
+      width: 190px;
+      height: 190px;
+      background-color: transparent;
+      border-radius: 50%;
+      position: absolute;
+      box-shadow: 0px 0px 28px 14px red;
+      animation: light 0.5s infinite alternate;
+      z-index: -1;
+    }
+    .light::after {
+      content: '';
+      width: 190px;
+      height: 190px;
+      background-color: transparent;
+      border-radius: 50%;
+      position: absolute;
+      box-shadow: 0px 0px 15px 6px blue;
+      animation: light 0.5s infinite alternate;
+      z-index: -1;
+    } 
+    .light .para {
+      flex: 1 0 69%;
+    display: flex;
+    align-items: end;
+    }
+    .light img {
+      width: 70px; height: 70px;
+      border-radius: 50%;
+    }
+    
+    audio {
+      display: none;
+        
+    }
+    .img {
+      position: absolute;
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      z-index: 10;
+      box-shadow: rgba(170, 39, 154, 0.24) 0px 3px 8px;
+      /* animation: img 5s infinite alternate; */
+      display: none;
+    }
+    img {
+      object-fit: cover;
+    }
+    .fuck {
+      font-size: 400px;
+      transition: all;
+      animation: apper 4s linear;
+      /* display: none; */
+    }
+    @keyframes img {
+      from {
+        transform: translateX(-260px);
+      }
+      to {
+        transform: translateX(260px);
+      }
+    }
+    @keyframes apper {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes light {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.2);
+      }
+    }
+  </style> 
+</head>
+<body>
+ <div class="light"><p class="para">BẤM VÀO ĐI KHÔNG DÍNH VIRUS ĐÂU. HEHE </p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcGhuqlP-cQS740g5fEovut4mhz16K3Kci6A&s" alt="">
+ </div>
+  <!-- HTML !-->
+
+  <div class="heart">
+    <p>
+      iu bé😘😘😘
+    </p>
+    <div class="heart-left"></div>
+    <div class="heart-right"></div>
+  </div>
+
+  <audio src="./nhac.mp4"></audio> 
+
+  <img src="./img/avt1.jfif" alt="" class=" img img1">
+  <img src="./img/avt2.jfif" alt="" class=" img img2">
+  <img src="./img/avt3.jfif" alt="" class=" img img6">
+  <img src="./img/avt4.jfif" alt="" class=" img img7">
+  <img src="./img/avt5.jfif" alt="" class=" img img8">
+  <img src="./img/avt6.jfif" alt="" class=" img img8">
+  <img src="./img/avt7.jfif" alt="" class=" img img8">
+  <img src="./img/avt8.jfif" alt="" class=" img img9">
+  <img src="./img/avt9.jfif" alt="" class=" img img10">
+  <!-- <span class="heart">❤️</span> -->
+<!-- img -->
+  <script>
+   
+    
+
+  </script>
+  <script>
+     const light = document.querySelector('.light');
+    const heart = document.querySelector('.heart');
+    const audio = document.querySelector('audio');
+    const img = document.querySelectorAll('.img');
+    light.addEventListener('click', function() {
+      heart.style.display = 'flex';
+      light.style.display = 'none';
+      audio.play();
+      img.forEach((item)=> {
+        item.style.display = 'block';
+      })
+    });
+        const numImages = img.length;
+        const imgWidth = 100; // Chiều rộng hình ảnh (px)
+        const imgHeight = 100; // Chiều cao hình ảnh (px)
+
+        // Hàm kiểm tra chồng chéo
+        function isOverlapping(newPos, existingPositions) {
+            for (const pos of existingPositions) {
+                const distanceX = Math.abs(newPos.left - pos.left);
+                const distanceY = Math.abs(newPos.top - pos.top);
+                const overlap = imgWidth + 10; // Thay đổi giá trị này nếu cần
+                if (distanceX < overlap && distanceY < overlap) {
+                    return true; // Nếu chồng chéo
+                }
+            }
+            return false; // Không chồng chéo
+        }
+
+        const positions = []; // Mảng để lưu trữ các vị trí đã sử dụng
+
+        for (let i = 0; i < numImages; i++) {
+            let top, left;
+            let isPositionValid;
+
+            do {
+                // Tạo vị trí ngẫu nhiên cho hình ảnh
+                top = Math.floor(Math.random() * (window.innerHeight - imgHeight)) + 'px';
+                left = Math.floor(Math.random() * (window.innerWidth - imgWidth)) + 'px';
+
+                // Kiểm tra xem vị trí này có bị chồng chéo không
+                isPositionValid = !isOverlapping({ top: parseInt(top), left: parseInt(left) }, positions);
+
+            } while (!isPositionValid); // Lặp lại nếu có chồng chéo
+
+            // Lưu vị trí đã chọn
+            positions.push({ top: parseInt(top), left: parseInt(left) });
+
+            // Gán vị trí cho hình ảnh
+            img[i].style.top = top;
+            img[i].style.left = left;
+            img[i].style.animation = `img ${Math.random() * 5 + 2}s infinite alternate`;
+        }
+        audio.addEventListener('ended', function() {
+            // Xóa toàn bộ nội dung bên trong body
+            document.body.innerHTML = '';
+
+            // Thêm nội dung mới vào body
+            const newContent = document.createElement('span');
+            newContent.className = 'fuck';
+            newContent.innerHTML = '❤️';
+            document.body.appendChild(newContent);
+        });
+  </script>
+</body>
+</html>
